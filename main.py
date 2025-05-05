@@ -54,11 +54,11 @@ for idx, username in enumerate(combinations[:1000]):  # Limit to the first 1000 
     # Print progress
     print(f"Processed {idx + 1}/1000 usernames.")
 
-    time.sleep(1)  # Sleep for 1.25 seconds to avoid rate limiting
+    time.sleep(1)  # Sleep for 1 second
 
 # Optional: Save available usernames to a file
 with open("available_usernames.txt", "w") as f:
     for name in available_usernames:
         f.write(name + "\n")
 
-print(f"✅ Done. Available usernames saved to 'available_usernames.txt'.")
+print(f"Done. Available usernames saved to 'available_usernames.txt'.")
